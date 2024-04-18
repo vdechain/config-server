@@ -1,0 +1,17 @@
+spring:
+  banner:
+    location: classpath:banner.txt
+    charset: UTF-8
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:vdechain/config-store.git
+          clone-on-start: true
+          searchPaths: '{application}'
+          force-pull: true
+          ignoreLocalSshSettings: true
+          privateKey: PUT YOUR KEY
+
+server:
+  port: 8888
