@@ -5,7 +5,7 @@ services:
       - "8888:8888"
     environment:
       SPRING_PROFILES_ACTIVE: native
-      RQE_CONFIGSRV_USERNAME: ${RQE_CONFIGSRV_USERNAME:-config-admin}
-      RQE_CONFIGSRV_PASSWORD: ${RQE_CONFIGSRV_PASSWORD:?set RQE_CONFIGSRV_PASSWORD in .env}
+      CONFIG_SERVER_USERNAME: ${CONFIG_SERVER_USERNAME:-config-admin}
+      CONFIG_SERVER_PASSWORD: ${CONFIG_SERVER_PASSWORD:?set CONFIG_SERVER_PASSWORD in .env}
     volumes:
       - ../config-store:/config:ro

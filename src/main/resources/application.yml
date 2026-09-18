@@ -4,8 +4,8 @@ spring:
     charset: UTF-8
   security:
     user:
-      name: ${RQE_CONFIGSRV_USERNAME:config-admin}
-      password: ${RQE_CONFIGSRV_PASSWORD}
+      name: ${CONFIG_SERVER_USERNAME:config-admin}
+      password: ${CONFIG_SERVER_PASSWORD}
 
 server:
   port: 8888
