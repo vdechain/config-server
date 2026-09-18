@@ -1,0 +1,9 @@
+services:
+  config-server:
+    build: .
+    ports:
+      - "8888:8888"
+    environment:
+      SPRING_PROFILES_ACTIVE: native
+    volumes:
+      - ../config-store:/config:ro
